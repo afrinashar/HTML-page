@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ClassIQ helps you learn in-demand skills with expert-led online courses and an interactive learning community.">
+  <meta name="theme-color" content="#f7f7f7">
+  <title>ClassIQ — Empower Your Learning Journey</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="ClassIQ home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17.5 17.5 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="7" cy="17" r="2.3" fill="currentColor"/><circle cx="17" cy="7" r="2.3" fill="currentColor"/></svg></span>
+        <span>Class<span class="brand-iq">IQ</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#courses" data-nav="courses">Courses</a>
+        <a href="#dashboard" data-nav="dashboard" class="dashboard-nav">Dashboard</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-dark btn-small" href="#login">Login</a>
+        <a class="btn btn-dark btn-small" href="#signup">SignUp</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-view active" id="home-view" data-view="home">
+        <section class="hero section-wrap" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">LEARN • GROW • ACHIEVE</p>
+            <h1>Empower Your<br>Learning Journey<br>with <span class="highlight">ClassIQ</span></h1>
+            <p class="hero-description">Unlock a world of knowledge and skills with our innovative online courses, expert instructors, and interactive learning tools that help you thrive in your future career.</p>
+            <a class="btn btn-lime" href="#courses">Explore Courses <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-art" aria-label="Friendly ClassIQ learning mascot illustration" role="img">
+            <div class="glow"></div>
+            <span class="doodle doodle-one">⌁</span><span class="doodle doodle-two">✳</span>
+            <div class="mascot">
+              <div class="hair"></div>
+              <div class="face"><span class="brow brow-left"></span><span class="brow brow-right"></span><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="cheek cheek-left"></span><span class="cheek cheek-right"></span><span class="nose"></span><span class="smile"></span></div>
+              <div class="neck"></div><div class="body-shirt"></div>
+              <div class="arm arm-left"></div><div class="arm arm-right"></div>
+              <div class="hand"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust section-wrap">
+          <p>Trusted by 5,000+ Companies Worldwide</p>
+          <div class="company-logos" aria-label="Trusted companies">
+            <span class="google">Google</span><span class="netflix">NETFLIX</span><span class="airbnb">⌂ airbnb</span><span class="amazon">amazon<span class="amazon-smile">⌣</span></span><span class="facebook">facebook.</span>
+          </div>
+        </section>
+
+        <section class="courses-section section-wrap" id="courses">
+          <div class="section-heading"><p class="eyebrow">FIND YOUR NEXT SKILL</p><h2>Certified Courses for <strong>Professionals</strong></h2></div>
+          <div class="category-grid">
+            <article class="category-card"><span class="category-icon">▣</span><h3>Web Development</h3><p>Build modern, responsive experiences.</p><a class="btn btn-lime btn-tiny" href="#dashboard">View Courses</a></article>
+            <article class="category-card"><span class="category-icon">▦</span><h3>Data Science</h3><p>Turn data into meaningful insights.</p><a class="btn btn-lime btn-tiny" href="#dashboard">View Courses</a></article>
+            <article class="category-card"><span class="category-icon">▤</span><h3>App Development</h3><p>Create apps people love to use.</p><a class="btn btn-lime btn-tiny" href="#dashboard">View Courses</a></article>
+          </div>
+        </section>
+
+        <section class="solution section-wrap">
+          <div class="solution-art"><div class="solution-window"></div><div class="mini-mascot"><div class="mini-hair"></div><div class="mini-face"><span></span><span></span><b></b></div><div class="mini-body"></div><div class="mini-hand"></div></div></div>
+          <div class="solution-copy"><p class="eyebrow">YOUR SUCCESS, OUR MISSION</p><h2>All-In-One Solution</h2><ul><li><span>▣</span>Flexible Learning</li><li><span>♟</span>Expert Instructors</li><li><span>♧</span>Interactive Community</li></ul><a class="btn btn-lime" href="#signup">↗ &nbsp; Join Now</a></div>
+        </section>
+      </section>
+
+      <section class="page-view auth-view" id="login-view" data-view="login">
+        <div class="auth-card"><div class="auth-icon">↗</div><h1>Login</h1><p class="auth-subtitle">Welcome back! Continue your learning journey.</p>
+          <form id="login-form" novalidate><label class="sr-only" for="login-email">Email</label><input id="login-email" name="email" type="email" placeholder="Enter Your Email" autocomplete="email" required><label class="sr-only" for="login-password">Password</label><input id="login-password" name="password" type="password" placeholder="Enter Your Password" autocomplete="current-password" required minlength="6"><button class="btn btn-lime form-submit" type="submit">Login</button><p class="form-message" aria-live="polite"></p></form>
+          <p class="auth-switch">Don't have an account? <a href="#signup">SignUp</a></p>
+        </div>
+      </section>
+
+      <section class="page-view auth-view" id="signup-view" data-view="signup">
+        <div class="auth-card"><div class="auth-icon">✦</div><h1>SignUp</h1><p class="auth-subtitle">Create an account and start learning today.</p>
+          <form id="signup-form" novalidate><label class="sr-only" for="signup-email">Email</label><input id="signup-email" name="email" type="email" placeholder="Enter Your Email" autocomplete="email" required><label class="sr-only" for="signup-name">Full name</label><input id="signup-name" name="name" type="text" placeholder="Enter Your Fullname" autocomplete="name" required minlength="2"><label class="sr-only" for="signup-password">Password</label><input id="signup-password" name="password" type="password" placeholder="Enter Your Password" autocomplete="new-password" required minlength="6"><button class="btn btn-lime form-submit" type="submit">SignUp</button><p class="form-message" aria-live="polite"></p></form>
+          <p class="auth-switch">Already have an account? <a href="#login">Login</a></p>
+        </div>
+      </section>
+
+      <section class="page-view dashboard-view" id="dashboard-view" data-view="dashboard">
+        <section class="dashboard-banner"><div><p class="eyebrow">YOUR LEARNING SPACE</p><h1>Enroll in Your Fav Courses</h1><p>Small steps today. Big achievements tomorrow.</p></div><div class="laptop-mascot" aria-hidden="true"><div class="laptop-head"></div><div class="laptop-face"><span></span><span></span><b></b></div><div class="laptop-screen">✦</div><div class="laptop-base"></div></div></section>
+        <div class="dashboard-title"><div><p class="eyebrow">KEEP LEARNING</p><h2>All Courses <span>↗</span></h2></div><label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="course-search" placeholder="Search courses" aria-label="Search courses"></label></div>
+        <div class="dashboard-grid" id="dashboard-grid">
+          <article class="course-card" data-course="web development frontend"><div class="course-thumb thumb-web"><span>&lt;/&gt;</span></div><div class="course-info"><span class="course-tag">DEVELOPMENT</span><h3>Full Stack Web Development</h3><p>Build real-world websites from front to back.</p><div class="course-meta"><span>◷ 8 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+          <article class="course-card" data-course="data science analytics"><div class="course-thumb thumb-data"><span>⌁</span></div><div class="course-info"><span class="course-tag">DATA SCIENCE</span><h3>Data Science Essentials</h3><p>Explore data, patterns, and practical insights.</p><div class="course-meta"><span>◷ 6 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+          <article class="course-card" data-course="app development mobile"><div class="course-thumb thumb-app"><span>▣</span></div><div class="course-info"><span class="course-tag">APP DEVELOPMENT</span><h3>Mobile App Development</h3><p>Design and develop useful mobile apps.</p><div class="course-meta"><span>◷ 7 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+          <article class="course-card" data-course="ui ux design"><div class="course-thumb thumb-design"><span>✳</span></div><div class="course-info"><span class="course-tag">DESIGN</span><h3>UI/UX Design Fundamentals</h3><p>Make digital products simple and delightful.</p><div class="course-meta"><span>◷ 4 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+          <article class="course-card" data-course="javascript programming"><div class="course-thumb thumb-js"><span>JS</span></div><div class="course-info"><span class="course-tag">PROGRAMMING</span><h3>JavaScript Mastery</h3><p>Strengthen your fundamentals with projects.</p><div class="course-meta"><span>◷ 5 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+          <article class="course-card" data-course="ai machine learning"><div class="course-thumb thumb-ai"><span>AI</span></div><div class="course-info"><span class="course-tag">ARTIFICIAL INTELLIGENCE</span><h3>AI & Machine Learning</h3><p>Understand the ideas behind intelligent tools.</p><div class="course-meta"><span>◷ 8 weeks</span><button class="course-action" type="button">View course ↗</button></div></div></article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No courses match your search. Try another keyword.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">↗</span><span>Class<span class="brand-iq">IQ</span></span></a><h3>Subscribe</h3><p>Subscribe for the latest courses, tips, and updates on your learning community.</p><form id="subscribe-form" class="subscribe-form"><label class="sr-only" for="subscribe-email">Your email</label><input id="subscribe-email" type="email" placeholder="Enter your email" required><button type="submit">Subscribe</button></form><p class="subscribe-message" aria-live="polite"></p></div><div class="footer-links"><div><h4>ClassIQ Business</h4><a href="#courses">Teach on ClassIQ</a><a href="#courses">Teaching Tools</a><a href="#courses">ClassIQ app</a><a href="#courses">Contact us</a></div><div><h4>Explore</h4><a href="#courses">Careers</a><a href="#courses">Blog</a><a href="#courses">Affiliate</a><a href="#courses">Support</a></div></div></div>
+      <div class="footer-bottom"><span>© 2024 ClassIQ. All rights reserved.</span><div class="social-links"><a href="#home" aria-label="Instagram">◎</a><a href="#home" aria-label="X">X</a><a href="#home" aria-label="LinkedIn">in</a></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
